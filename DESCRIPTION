@@ -1,6 +1,6 @@
 Package: isoraster
 Title: Create Contour Lines and Contour Polygons from a Raster
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: 
     c(person("Michael", "Sumner", email = "mdsumner@gmail.com", role = c("aut", "cre"), 
      comment = c(ORCID = "0000-0002-2471-7511")))
@@ -14,3 +14,8 @@ Suggests:
 Config/testthat/edition: 3
 URL: https://github.com/hypertidy/isoraster
 BugReports: https://github.com/hypertidy/isoraster/issues
+Imports: 
+    isoband,
+    sf
+Depends: 
+    terra

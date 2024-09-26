@@ -38,12 +38,22 @@ This is a basic example.
 library(isoraster)
 plot(isoband_terra(rast(volcano)))
 
-plot(isoband_terra(rast(volcano), seq(100, 170, by = 5)))
+plot(isoline_terra(rast(volcano), seq(100, 170, by = 5)))
 
 plot(isoband_terra(rast(volcano), c(100, 110, 120), c(110, 120, 130)))
 
 ```
 
+Note that the lines are nice and smooth, because the underlying algorithm is marching squares in {isoband}, equivalent to R's 'contour()'. 
+
+
+```{r decimated}
+dr <- aggregate(rast(volcano), 4)
+plot(dr)
+plot(isoband_terra(dr, c(120, 130, 160), c(130, 160, 170)), add = TRUE)
+
+
+```
 
 ## Code of Conduct
   
