@@ -34,7 +34,7 @@ isoline_terra <- function(x, line) {
   terra::vect(sf::st_sf(line = line, geometry  = sf::st_sfc(isoband::iso_to_sfg(b), crs = terra::crs(x))))
 }
 
-
+#' @name isoline_terra
 #' @export
 isoband_terra <- function(x, lo, hi = NULL) {
   if (!inherits(x, "SpatRaster")) stop("in isoline(terra[x]) x must be a SpatRaster (from terra::rast())")

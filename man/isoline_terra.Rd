@@ -6,6 +6,8 @@
 \title{Iso bands and iso lines for terra}
 \usage{
 isoline_terra(x, line)
+
+isoband_terra(x, lo, hi = NULL)
 }
 \arguments{
 \item{x}{a terra raster, only first layer is considered}
