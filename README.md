@@ -4,6 +4,8 @@
 # isoraster
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/hypertidy/isoraster/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/hypertidy/isoraster/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of isoraster is to create contour lines and contour polygons
