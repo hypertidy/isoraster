@@ -1,0 +1,14 @@
+Package: isoraster
+Title: Create Contour Lines and Contour Polygons from a Raster
+Version: 0.0.0.9000
+Authors@R: 
+    c(person("Michael", "Sumner", email = "mdsumner@gmail.com", role = c("aut", "cre"), 
+     comment = c(ORCID = "0000-0002-2471-7511")))
+Description: Creates nice smooth 'marching squares' contour lines and polygons.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

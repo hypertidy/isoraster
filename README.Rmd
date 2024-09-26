@@ -1,0 +1,50 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# isoraster
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of isoraster is to create contour lines and contour polygons from rasters. 
+
+The R terra package is used as a foundation. The R isoband package is the engine, sf is used as an intermediate format internally. 
+
+## Installation
+
+You can install the development version of isoraster like so:
+
+``` r
+remotes::install_github("mdsumner/isoraster")
+```
+
+## Example
+
+This is a basic example. 
+
+```{r example}
+library(isoraster)
+plot(isoband_terra(rast(volcano)))
+
+plot(isoband_terra(rast(volcano), seq(100, 170, by = 5)))
+
+plot(isoband_terra(rast(volcano), c(100, 110, 120), c(110, 120, 130)))
+
+```
+
+
+## Code of Conduct
+  
+Please note that the isoraster project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
