@@ -16,6 +16,10 @@
 #' for isoband_terra a table of spatial polygons with 'lo' and 'hi' contour values
 #' @export
 #' @aliases isoband_terra
+#' @importFrom terra as.array xFromCol yFromRow vect crs
+#' @importFrom sf st_sfc st_sf
+#' @importFrom utils head tail
+#' @importFrom isoband iso_to_sfg isolines isobands
 #' @examples
 #' isoline_terra(rast(volcano))
 #' isoband_terra(rast(volcano), lo = 100, hi = 150)
