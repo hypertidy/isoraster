@@ -28,7 +28,7 @@ The R terra package is used as a foundation. The R isoband package is the engine
 You can install the development version of isoraster like so:
 
 ``` r
-remotes::install_github("mdsumner/isoraster")
+remotes::install_github("hypertidy/isoraster")
 ```
 
 ## Example
