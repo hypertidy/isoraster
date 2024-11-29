@@ -19,7 +19,7 @@ the engine, sf is used as an intermediate format internally.
 You can install the development version of isoraster like so:
 
 ``` r
-remotes::install_github("mdsumner/isoraster")
+remotes::install_github("hypertidy/isoraster")
 ```
 
 ## Example
